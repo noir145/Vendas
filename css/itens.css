@@ -1,0 +1,156 @@
+/* Estilo geral */
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #f0f0f0; /* Mantendo o fundo original */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+    padding: 20px;
+}
+
+.container {
+    width: 95%;
+    max-width: 1000px;
+    text-align: center;
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+    color: #222; /* Mantendo a cor do título */
+    margin-bottom: 20px;
+    font-size: 24px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+/* Tabela estilizada */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    background: white;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+th, td {
+    border: 1px solid #ddd;
+    padding: 12px;
+    text-align: center;
+}
+
+th {
+    background: #444; /* Mantendo a cor original do cabeçalho */
+    color: white;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+tbody tr {
+    transition: background 0.3s ease-in-out;
+}
+
+tbody tr:hover {
+    background-color: #f5f5f5;
+}
+
+/* Imagens na tabela */
+td img {
+    width: 120px;
+    height: 120px;
+    object-fit: cover;
+    border-radius: 8px;
+    transition: transform 0.3s ease-in-out;
+}
+
+td img:hover {
+    transform: scale(1.05);
+}
+
+/* Links dos produtos */
+td a {
+    text-decoration: none;
+    color: #444; /* Mantendo o tom escuro original */
+    font-weight: bold;
+    padding: 6px 12px;
+    border-radius: 6px;
+    display: inline-block;
+    transition: background 0.3s ease-in-out;
+}
+
+td a:hover {
+    background: #222;
+    color: white;
+}
+
+/* Responsividade */
+
+/* Ajuste para tablets */
+@media screen and (max-width: 768px) {
+    table {
+        display: block;
+        overflow-x: auto;
+        white-space: nowrap;
+    }
+
+    td img {
+        width: 90px;
+        height: 90px;
+    }
+}
+
+/* Modo "cards" para celulares pequenos */
+@media screen and (max-width: 480px) {
+    table, thead, tbody, th, td, tr {
+        display: block;
+    }
+
+    thead {
+        display: none;
+    }
+
+    tbody tr {
+        background: white;
+        border: 1px solid #ddd;
+        margin-bottom: 15px;
+        padding: 15px;
+        border-radius: 8px;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    td {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 8px;
+        border: none;
+    }
+
+    td img {
+        width: 80px;
+        height: 80px;
+    }
+
+    td a {
+        font-size: 14px;
+        padding: 8px 12px;
+        border-radius: 5px;
+        background: #444;
+        color: white;
+        display: inline-block;
+        transition: background 0.3s;
+    }
+
+    td a:hover {
+        background: #222;
+    }
+}
