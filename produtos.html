@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Produtos Digitais</title>
+    <link rel="stylesheet" href="css/itens.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <div class="background-tint"></div>
+    
+    <div class="container">
+        <div class="navigation-header">
+            <a href="index.html" class="btn-voltar">
+                <i class="fas fa-chevron-left"></i>
+                <span>Voltar ao Portal</span>
+            </a>
+            <div class="logo-small">
+                <i class="fas fa-digital-tachograph"></i>
+                <span>Produtos Digitais</span>
+            </div>
+        </div>
+
+        <header class="page-header">
+            <h1>Cursos e Produtos Digitais</h1>
+            <p class="subtitle">Conhecimento que transforma sua vida</p>
+        </header>
+
+        <main class="main-content">
+            <div class="products-container">
+                <!-- Produto 1 -->
+                <div class="product-card digital">
+                    <div class="product-image">
+                        <img src="img/Ganhe_Dinheiro_Online.png" alt="Ganhe Dinheiro Online">
+                        <div class="digital-badge">
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <h3>Ganhe Dinheiro Online</h3>
+                        <p class="product-description">Aprenda a gerar renda extra na internet</p>
+                        <a href="https://pay.kiwify.com.br/mJ3yZ8v" target="_blank" class="product-link">
+                            Saiba Mais <i class="fas fa-external-link-alt"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Produto 2 -->
+                <div class="product-card digital">
+                    <div class="product-image">
+                        <img src="img/30_Dias_para_Transformar.png" alt="30 Dias para Transformar">
+                        <div class="digital-badge">
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <h3>30 Dias para Transformar</h3>
+                        <p class="product-description">Mude seus hábitos em um mês</p>
+                        <a href="https://pay.kiwify.com.br/lC0oYsX" target="_blank" class="product-link">
+                            Saiba Mais <i class="fas fa-external-link-alt"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </main>
+    </div>
+    <script>
+        // Verifica o tema salvo e aplica
+        window.addEventListener('DOMContentLoaded', () => {
+          const savedTheme = localStorage.getItem('theme');
+          if (savedTheme === 'dark') {
+            document.body.classList.add('dark');
+          }
+        });
+      </script>
+      
+</body>
+</html>

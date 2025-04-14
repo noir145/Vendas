@@ -1,0 +1,22 @@
+/* Botão de voltar */
+.btn-voltar {
+    display: inline-block;
+    background: #444; /* Cor original do projeto */
+    color: white;
+    padding: 10px 20px;
+    border-radius: 8px;
+    font-size: 16px;
+    font-weight: bold;
+    text-decoration: none;
+    transition: background 0.3s ease-in-out, transform 0.2s;
+    box-shadow: 2px 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.btn-voltar:hover {
+    background: #222;
+    transform: scale(1.05);
+}
+
+.btn-voltar:active {
+    transform: scale(0.95);
+}
